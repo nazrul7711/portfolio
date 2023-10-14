@@ -1,0 +1,12 @@
+@import "variables";
+.test{
+  height: 100vh;
+  display: grid;
+  place-items:center ;
+  background-color: peru;
+  .box{
+    height:200px;
+    width:200px;
+    background-color: white;
+  }
+}

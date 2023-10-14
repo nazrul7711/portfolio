@@ -1,0 +1,10 @@
+@import "variables";
+.page{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  section{
+    height: 100vh;
+    scroll-snap-align: start;
+
+  }
+}
