@@ -1,12 +1,27 @@
+"use client"
 import "@/styles/navbar.scss"
 import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
+import {motion} from "framer-motion"
+import Sidebar from "./Sidebar";
 
 const Navbar = () => {
+  let variants={
+    hidden:{opacity:0,scale:.5},
+    visible:{opacity:1,scale:1}
+  }
   return (
     <div className="navbar">
-      <div className="sidebar"></div>
+      <Sidebar />
       <div className="wrapper">
-        <div className="logo">Nazrul Hassan</div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          animate="visible"
+          transition={{duration:.5}}
+          className="logo"
+        >
+          Nazrul Hassan
+        </motion.div>
         <div className="socialLinks">
           <div className="link">
             <BsFacebook size={20} />

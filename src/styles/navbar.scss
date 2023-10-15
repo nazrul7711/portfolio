@@ -1,21 +1,20 @@
 @import "variables";
-.navbar{
-  background-color: red;
+.navbar {
   height: 6rem;
-  align-items: center;
-
-  .wrapper{
+  position:relative;
+  
+  .wrapper {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1150px;
+    max-width: 1000px;
     margin: 0 auto;
-    .logo{
+    .logo {
       font-size: 1.5rem;
       font-weight: 700;
     }
-    .socialLinks{
+    .socialLinks {
       display: flex;
       gap: 1rem;
     }
