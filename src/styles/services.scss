@@ -1,0 +1,55 @@
+@import "variables";
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 9rem;
+  position: relative;
+  .textContainer {
+    position: absolute;
+    top: 100;
+    right: 500;
+    hr {
+      // position: absolute;
+      // width: 50%;
+      // top: 50%;
+      // left: 19%;
+    }
+  }
+  .ideaContainer {
+    .title {
+      .imgContainer {
+        position: relative;
+        height: 100px;
+        width: 10rem;
+        border-radius: 5rem;
+      }
+    }
+  }
+  .listContainer {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 1rem;
+    .box {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      width: 13rem;
+      gap: 5px;
+      border: 1px solid white;
+      button{
+        border: none;
+        background-color: orange;
+        color:black ;
+        padding: 1rem 2rem;
+        border-radius: .6rem;
+      }
+      &:hover{
+        background-color: rgb(166, 166, 166);
+        color:black;
+      }
+
+    }
+  }
+}
