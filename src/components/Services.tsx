@@ -6,12 +6,13 @@ import { motion } from "framer-motion";
 
 const Services = () => {
   let sliderVariants = {
-    initial: { x: -400 },
+    initial: { x: -500, opacity: 0 },
     animate: {
       x: 0,
+      opacity: 1,
       transition: {
         duration: 1,
-        staggerChildren:.6
+        staggerChildren: 0.6,
       },
     },
   };
@@ -20,7 +21,7 @@ const Services = () => {
       className="services"
       variants={sliderVariants}
       initial="initial"
-      animate="animate"
+      whileInView="animate"
     >
       <motion.div className="textContainer" variants={sliderVariants}>
         <p>
@@ -34,15 +35,15 @@ const Services = () => {
           <div className="imgContainer">
             <Image src={"/people.webp"} alt="titleImg" fill={true} />
           </div>
-          <div>
+          <div className="desc">
             <b>Unique</b>
-            <div>Ideas</div>
+            <p>Ideas</p>
           </div>
         </div>
         <div className="title">
-          <div>
+          <div className="desc">
             <b>For Your</b>
-            <div>Business</div>
+            <p>Business</p>
           </div>
           <button>WHAT WE DO?</button>
         </div>
