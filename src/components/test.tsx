@@ -1,19 +1,13 @@
-"use client";
-import "@/styles/test.scss";
-import { motion } from "framer-motion";
-import { useState } from "react";
 
-const Test = () => {
+import React from 'react'
 
-  let items = ["item1","item2","item3","item4"]
+const test = () => {
   return (
-    <div className="test">
-    </div>
-  );
-};
+    <div>test</div>
+  )
+}
 
-export default Test;
-
+export default test
 //initial:{},animate:{},transition:{},whileHover = {{}},
 //animate fontSize,opacity,color , rotateZ mariginTop
 //initial:{{x:"-100vw"}}
@@ -29,5 +23,5 @@ export default Test;
 //staggerChildren
 //keyframes scale:1.1,transition:{yoyo:10 or Infinity}
 //AnimatePresence exit={{y:-1000}}
-//svg hidden:{opacity:0,pathLength:0} 
+//svg hidden:{opacity:0,pathLength:0}
 //drag dragConstraints={{}}

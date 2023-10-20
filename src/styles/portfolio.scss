@@ -1,0 +1,60 @@
+.portfolio {
+  background-color: brown;
+  .progress {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 10;
+    h1 {
+      color: orange;
+      font-size: 4rem;
+    }
+    .line {
+      height: 1rem;
+      background-color: white;
+    }
+  }
+}
+
+.folio {
+  width: 70%;
+  display: flex;
+  gap: 2rem;
+  margin: 0 auto;
+  align-items: center;
+
+  .imgContainer {
+    flex: 1;
+    position: relative;
+    height: 50%;
+    width: 70%;
+    border-radius: 0.8rem;
+    overflow: hidden;
+  }
+  .detail {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    h1 {
+      font-size: 3rem;
+      color: white;
+    }
+    p {
+      color: rgb(216, 216, 216);
+    }
+    button {
+      max-width: max-content;
+      padding: 1rem 3rem;
+      color: white;
+      background-color: orange;
+      border: none;
+      border-radius: 0.8rem;
+    }
+    .line {
+      flex: 1;
+      background-color: white;
+      color: red;
+    }
+  }
+}

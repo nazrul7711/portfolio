@@ -86,6 +86,9 @@ const Services = () => {
           <button>Go</button>
         </div>
       </motion.div>
+      {/* <motion.div
+        style={{ height: "3px", backgroundColor: "red", scaleX: ".6" }}
+      ></motion.div> */}
     </motion.div>
   );
 };

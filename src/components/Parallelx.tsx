@@ -25,6 +25,7 @@ const Parallelx = () => {
         className="planets"
         style={{ y: yChanged, transition: { duration: 2 } }}
       ></motion.div>
+
     </motion.div>
   );
 };

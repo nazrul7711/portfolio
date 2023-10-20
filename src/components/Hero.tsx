@@ -50,7 +50,7 @@ const Hero = () => {
           <button>Contact Me</button>
         </motion.div>
         <motion.div className="scroll" variants={heroVariant} animate="slide">
-          <Image src={"/scroll.png"} fill={true} alt={"scroll"}/>
+          <Image src={"/scroll.png"} fill={true} alt={"scroll"} />
         </motion.div>
         <motion.div
           className="slidingQuote"
