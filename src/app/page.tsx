@@ -6,10 +6,15 @@ import Hero from "@/components/Hero";
 import Parallelx from "@/components/Parallelx";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
+import Contact from "@/components/Contact";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export default function Home() {
+  let ref = useRef(null);
+  let isInView = useInView(ref, { margin: "-100px" });
   return (
-    <div className="page">
+    <div className="page" ref={ref}>
       <section>
         <Navbar />
         <Hero />
@@ -21,6 +26,10 @@ export default function Home() {
         <Services />
       </section>
       <Portfolio />
+      <section id="Contact">
+        <Contact />
+      </section>
+      
     </div>
   );
 }
